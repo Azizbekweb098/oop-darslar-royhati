@@ -34,12 +34,7 @@ class Car{
         $this->narxi = $narxi;
 
     }
-//    public  function year(){
-//        return $this->year;
-//    }
-// public function narxi(){
-//     return $this->narxi;
-// }
+
 protected function year()
 {
     return '2008';

@@ -1,19 +1,19 @@
 <?php
 
+
+
 interface Animal{
 public function runing();
 }
-class  Cats implements Animal{
-    public $years;
 
-    public function __construct($years)
-    {
-        $this->years = $years;
-    }
+class Cats implements Animal{
+public $years;
+public function __construct($years){
+$this->years = $years;
+}
 public function runing(){
-    return 'yurush';
+    return 'Salom';
 }
 }
-$cats = new Cats('2008');
-
-var_dump($cats);
+$mushuk = new Cats('2021');
+var_dump($mushuk);

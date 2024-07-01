@@ -1,27 +1,16 @@
 <?php
 
- class Furuest{
-    public $name;
+class Car{
+    public $model;
+    public $year;
     public $narxi;
-    public $kg;
 
-    public function __construct($name, $narxi, $kg){
-        $this->name = $name;
-        $this->narxi = $narxi;
-        $this->kg = $kg;
+    public function __construct($model, $year, $narxi){
+        $this->model = $model;
+        $this->year = $year;
+        $this->narxi =$narxi;
     }
-    public function nechi_kunturgan(){
-        return 'Saqlanish muddati 20-kun';
-    }
-
-};
-class Apple extends Furuest{
-public function xidi(){
-    return 'xidi shirin';
 }
-};
-$apple = new Apple('olma', '20-ming', '3kg');
 
-var_dump($apple->xidi(), $apple->nechi_kunturgan)
-
-?>
+$supra = new Car('Supra', 2008, '20000$');
+var_dump($supra);

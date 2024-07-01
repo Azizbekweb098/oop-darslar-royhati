@@ -1,65 +1,22 @@
 <?php
-//
-//class Furuest{
-//    public $name;
-//    protected $narxi;
-//    private $kg;
-//
-//    public function __construct($name, $narxi, $kg){
-//        $this->name = $name;
-//        $this->narxi = $narxi;
-//        $this->kg = $kg;
-//    }
-//    public function nechi_kunturgan(){
-//        return 'Saqlanish muddati 20-kun';
-//    }
-//    public  function narxi()
-//    {
-//        return $this->narxi;
-//    }
-//
-//};
-//$chevy = new Furuest('olma', '28$', 27);
-//echo $chevy->narxi();
-//
 
-class Car{
-    public $model;
-    protected $year;
-    private $narxi;
 
-    public function __construct($model, $year, $narxi){
-        $this->model = $model;
-        $this->year = $year;
-        $this->narxi = $narxi;
-
-    }
-
-protected function year()
+class Fruet
 {
-    return '2008';
-}
-
-}
-
-class ExuteCar extends  Car
-{
+    public $name;
+    public $tami;
     public $narxi;
-
-    public function years()
+    public function __construct($name, $tami, $narxi)
     {
-        return $this->year();
+        $this->name = $name;
+        $this->tami = $tami;
+        $this->narxi = $narxi;
     }
 
-
-
-    public function narxi()
-    {
-        return $this->narxi;
-    }
 }
+class ExitFruet extends Fruet
+{
 
-$supra = new ExuteCar('supra  ', '2008  ',28 );
-$supra->narxi = 28;
-
-echo   $supra->model . $supra->years() . $supra->narxi() ;
+}
+$apple = new ExitFruet('apple', 'zor', '10$');
+var_dump($apple);

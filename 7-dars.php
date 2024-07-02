@@ -1,16 +1,18 @@
 <?php
 
-class Fruet{
+class Frueit{
     public $name;
-    public $color;
+    public $year;
 
-    public function __construct($name, $color){
+    public function __construct($name, $year)
+    {
         $this->name = $name;
-        $this->color = $color;
+        $this->year = $year;
     }
-    public function __destruct(){
-   echo "Salom bu mevani nome {$this->name} va unu rangi {$this->color} va unu narxi 20$";
+    public function __destruct()
+    {
+  return "Bu mevani nomi {$this->name} va unu uzulgan sanasi {$this->year}";
     }
 }
-$apple = new Fruet('olma', 'yellow');
+$apple = new Frueit('olma', 2008);
 var_dump($apple);

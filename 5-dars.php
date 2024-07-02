@@ -1,19 +1,26 @@
 <?php
 
-
-
-interface Animal{
-public function runing();
+interface Animal
+{
+    public function ovozi();
+  public function yurushi();
 }
 
-class Cats implements Animal{
-public $years;
-public function __construct($years){
-$this->years = $years;
+class Cat implements Animal{
+    public $name;
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+    public function ovozi()
+    {
+        return 'Miyov Miyov';
+    }
+    public function yurushi()
+    {
+        return 'Yurushiga gap yoq';
+    }
 }
-public function runing(){
-    return 'Salom';
-}
-}
-$mushuk = new Cats('2021');
-var_dump($mushuk);
+
+$neko_mushuk = new Cat('nekovoy');
+var_dump($neko_mushuk->ovozi(), $neko_mushuk->yurushi());

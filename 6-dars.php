@@ -1,32 +1,31 @@
 <?php
 
 
-trait Wow{
-    public function WOw(){
-        return 'Vov vov';
-    }
-    public function Wee()
+trait wow
+{
+    public function vov()
     {
-        return 'salom';
+        return 'vovo vov';
     }
-}
-interface Animal{
-    public function runing();
 }
 
-class Cats implements Animal{
-    use Wow;
-    public $years;
-    public function __construct($years){
-        $this->years = $years;
-    }
-    public function runing()
+interface Animal
+{
+public function yurushi();
+}
+
+class Cats implements Animal
+{
+    public $name;
+    public function  __construct($name)
     {
-        return 'Salom';
+        $this->name = $name;
     }
 
+    public function yurushi()
+    {
+        return 'yurushi';
+    }
 }
-
-$mushuk = new Cats('2021');
-var_dump($mushuk->WOw());
-var_dump($mushuk->Wee());
+$necovoy = new Cats('Necovoy');
+var_dump($necovoy);

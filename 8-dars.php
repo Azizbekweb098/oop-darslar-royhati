@@ -1,55 +1,38 @@
 <?php
-class greeting{
-public static function wlecome()
-{
-echo 'hello wolrd <br>';
-}
-}
 
-greeting::wlecome();
+class greeting{
+    public static function welcome()
+    {
+        echo 'salom <br>';
+    }
+}
+greeting::welcome();
+
 
 class fff{
-    public static function welcome(){
-        echo 'hello sworld <br>';
+    public static function welcome()
+    {
+        echo 'salom <br>';
     }
-    public function __construct(){
+    public function __construct()
+    {
         self::welcome();
     }
 }
 new fff();
 
-class B
-{
+
+class A{
     public static function welcome()
     {
-        echo 'hello wolrd <br>';
+        echo 'salom <br>';
     }
 }
-
-class A
-{
+class B{
     public function message()
     {
-        B::welcome();
+        A::welcome();
     }
 }
-
-$abj = new A();
-echo $abj->message();
-
-
-class domen{
-    protected static function getWebsitename()
-    {
-   return 'Azizbek-Xasnaov.netlify.app';
-    }
-}
-
-class Domen3 extends domen{
-public $websiteName;
-public function __construct(){
-    $this->websiteName = parent::getWebsitename();
-}
-}
-$givname = new Domen3();
-echo $givname->websiteName;
+$abj = new B();
+$abj->message();

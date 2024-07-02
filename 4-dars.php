@@ -1,30 +1,41 @@
 <?php
 
-abstract class Car{
+
+abstract class  Car{
     public $model;
     public $year;
     public $price;
 
-    abstract public function yurushi();
+    abstract public function driving();
+    abstract public function rangi();
 
-    public function yer()
+    public function drv()
     {
-        return 'tezlik: 20-ot-kuch-tezlik';
+        return 'yurushusi: 1:saot-20km';
+    }
+    public function rang()
+    {
+        return 'rangi: oq';
     }
 }
-class  ExitCars extends Car
+
+class ExitCars extends Car
 {
-    public function __construct($model, $year, $price)
-    {
-        $this->model = $model;
-        $this->year = $year;
-        $this->price = $price;
-    }
-    public function yurushi()
-    {
-        return $this->yer();
-    }
+  public function __construct($model, $year, $price)
+  {
+  $this->model = $model;
+  $this->year = $year;
+  $this->price = $price;
+  }
+  public function driving()
+  {
+      return $this->drv();
+  }
+  public function rangi()
+  {
+      return $this->rang();
+  }
 }
-$supra = new ExitCars('supra', 1978, '2000$');
 
+$supra = new ExitCars('Supra', '1965', '20000$');
 var_dump($supra);

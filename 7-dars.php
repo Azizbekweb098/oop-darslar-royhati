@@ -11,8 +11,7 @@ class Frueit{
     }
     public function __destruct()
     {
-  return "Bu mevani nomi {$this->name} va unu uzulgan sanasi {$this->year}";
+  echo "Bu mevani nomi {$this->name} va unu uzulgan sanasi {$this->year}";
     }
 }
 $apple = new Frueit('olma', 2008);
-var_dump($apple);

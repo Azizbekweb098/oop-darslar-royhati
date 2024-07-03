@@ -1,35 +1,34 @@
 <?php
-class  Salom{
-    public static $value = 'Qanday <br>';
-}
-echo Salom::$value;
 
-
-class qanday{
-public static $value = 'Salom';
-public function setmee()
+class Car
 {
-return self::$value;
+    public static $value = 'Salom';
 }
-}
-$ww = new qanday();
-var_dump($ww->setmee());
+echo Car::$value;
 
-
-
-/////////
-
-class pi
+class CarR
 {
-    public static $value = 122.334534;
+    public static $valuw = 'Qanday';
+    public function ss()
+    {
+        return self::$valuw;
+    }
 }
-class x extends pi{
-    public function setmese()
+$sr = new CarR();
+var_dump($sr->ss());
+
+
+class Cart
+{
+    public static $value = 'wwww';
+}
+class SWer extends Cart
+{
+    public function dsa()
+
     {
         return parent::$value;
     }
 }
-echo x::$value;
-
-$abj = new x();
-$abj->setmese();
+$bj = new SWer();
+var_dump($bj->dsa());

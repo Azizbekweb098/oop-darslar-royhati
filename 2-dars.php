@@ -1,16 +1,17 @@
 <?php
 
-class Car{
-    public $model;
-    public $year;
+class Fruet{
+    public $name;
     public $narxi;
 
-    public function __construct($model, $year, $narxi){
-        $this->model = $model;
-        $this->year = $year;
-        $this->narxi =$narxi;
+    public function __construct($name, $narxi)
+    {
+        $this->name = $name;
+        $this->narxi = $narxi;
+    }
+    public function __destruct()
+    {
+        echo "Salom bu mavaning nomi {$this->name} va uning narxi {$this->narxi}";
     }
 }
-
-$supra = new Car('Supra', 2008, '20000$');
-var_dump($supra);
+$apple = new Fruet('Olma', '20$');
